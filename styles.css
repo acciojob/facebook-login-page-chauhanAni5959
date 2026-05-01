@@ -1,1 +1,121 @@
-/*  your css code here. If applicable */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+body {
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.main-container {
+    display: flex;
+    max-width: 980px;
+    width: 100%;
+    padding: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Left side styling */
+.content-left {
+    width: 50%;
+    padding-bottom: 80px;
+}
+
+.fb-logo {
+    color: #1877f2;
+    font-size: 60px;
+    letter-spacing: -2px;
+}
+
+.fb-tagline {
+    font-size: 28px;
+    line-height: 32px;
+    width: 500px;
+}
+
+/* Card styling */
+.login-card {
+    background: #fff;
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
+    width: 396px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    height: 52px;
+    padding: 14px 16px;
+    margin-bottom: 12px;
+    border: 1px solid #dddfe2;
+    border-radius: 6px;
+    font-size: 17px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #1877f2;
+    box-shadow: 0 0 0 2px #e7f3ff;
+}
+
+.btn-login {
+    background-color: #1877f2;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.forgot-link {
+    color: #1877f2;
+    text-decoration: none;
+    font-size: 14px;
+    text-align: center;
+    margin: 16px 0;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #dadde1;
+    margin-bottom: 20px;
+}
+
+.btn-new-account {
+    background-color: #42b72a;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    width: fit-content;
+    align-self: center;
+    cursor: pointer;
+}
+
+.footer-text {
+    margin-top: 28px;
+    font-size: 14px;
+    text-align: center;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 900px) {
+    .main-container { flex-direction: column; text-align: center; }
+    .content-left { width: 100%; padding-bottom: 20px; }
+    .fb-tagline { width: 100%; font-size: 24px; }
+}
